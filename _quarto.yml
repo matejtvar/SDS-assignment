@@ -5,21 +5,20 @@ project:
 website:
   title: "SDS Assignment"
   description: "Spatial Analysis of BBS Bird Data"
+
+page-footer:
+  left: "© 2026 Matěj Tvarůžka"
+  right: "Built with Python & Quarto"
   
-  # Adds a sidebar for that 'course-site' feel
-  sidebar:
-    style: "floating"
-    background: light
-    contents:
-      - section: "Analysis"
-        contents:
-          - index.ipynb
-      - section: "External Links"
-        contents:
-          - text: "Personal Portfolio"
-            href: "https://matejtvar.github.io/"
-          - text: "Source Code"
-            href: "https://github.com/matejtvar/SDS-assignment"
+ # Navbar replaces the sidebar for a cleaner horizontal look
+  navbar:
+    background: primary
+    search: true
+    right:
+      - text: "Portfolio"
+        href: "https://matejtvar.github.io/"
+      - icon: github
+        href: "https://github.com/matejtvar/SDS-assignment"
 
   # Adds GitHub links to the top right
   repo-url: https://github.com/matejtvar/SDS-assignment
@@ -34,13 +33,9 @@ format:
     toc: true
     toc-location: right
     number-sections: true
-    code-fold: true        # Hides code by default, very professional
+    code-fold: false        # Hides code by default, very professional
     code-summary: "View Code"
     code-copy: true        # Adds a 'copy' button to code blocks
     code-tools: true       # Adds 'View Source' button at the top
     smooth-scroll: true
     anchor-sections: true  # Allows users to hover and link to headers
-
-page-footer:
-  left: "© 2026 Matěj Tvarůžka"
-  right: "Built with Python & Quarto"
