@@ -5,12 +5,8 @@ project:
 website:
   title: "SDS Assignment"
   description: "Spatial Analysis of BBS Bird Data"
-
-page-footer:
-  left: "© 2026 Matěj Tvarůžka"
-  right: "Built with Python & Quarto"
   
- # Navbar replaces the sidebar for a cleaner horizontal look
+  # Indented correctly inside 'website'
   navbar:
     background: primary
     search: true
@@ -20,7 +16,11 @@ page-footer:
       - icon: github
         href: "https://github.com/matejtvar/SDS-assignment"
 
-  # Adds GitHub links to the top right
+  # Indented correctly inside 'website'
+  page-footer:
+    left: "© 2026 Matěj Tvarůžka"
+    right: "Built with Python & Quarto"
+
   repo-url: https://github.com/matejtvar/SDS-assignment
   repo-actions: [edit, issue]
 
@@ -30,12 +30,17 @@ format:
       light: flatly
       dark: darkly
     css: styles.css
+    # This makes the page wider (default is usually ~900px)
+    grid:
+      body-width: 1100px
+      sidebar-width: 200px
+      margin-width: 200px
     toc: true
     toc-location: right
     number-sections: true
-    code-fold: false        # Hides code by default, very professional
+    code-fold: true         # Change to 'true' to actually hide code
     code-summary: "View Code"
-    code-copy: true        # Adds a 'copy' button to code blocks
-    code-tools: true       # Adds 'View Source' button at the top
+    code-copy: true
+    code-tools: true
     smooth-scroll: true
-    anchor-sections: true  # Allows users to hover and link to headers
+    anchor-sections: true
