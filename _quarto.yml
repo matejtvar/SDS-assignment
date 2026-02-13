@@ -26,6 +26,10 @@ format:
       body-width: 1100px
     toc: true
     toc-location: right
-    code-fold: true       # Hides code by default, users can click to see it
+    # --- NUMBERING SETTINGS ---
+    number-sections: true
+    number-depth: 3
+    # --------------------------
+    code-fold: true
     code-summary: "View Code"
-    code-copy: true       # This is a very helpful, stable feature
+    code-copy: true
