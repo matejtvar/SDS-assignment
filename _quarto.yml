@@ -5,41 +5,27 @@ project:
 website:
   title: "SDS Assignment"
   description: "Spatial Analysis of BBS Bird Data"
-  
   navbar:
     background: primary
-    search: true
+    search: false  # Disabled search to avoid JS errors
     right:
       - text: "Portfolio"
         href: "https://matejtvar.github.io/"
       - icon: github
         href: "https://github.com/matejtvar/SDS-assignment"
-
   page-footer:
     left: "© 2026 Matěj Tvarůžka"
     right: "Built with Python & Quarto"
-
-  repo-url: https://github.com/matejtvar/SDS-assignment
-  repo-actions: [edit, issue]
 
 format:
   html:
     theme: 
       light: flatly
       dark: darkly
-    css: styles.css
     grid:
       body-width: 1100px
-      sidebar-width: 200px
-      margin-width: 200px
     toc: true
     toc-location: right
-    number-sections: true
-    code-fold: true
+    code-fold: true       # Hides code by default, users can click to see it
     code-summary: "View Code"
-    code-tools:
-      source: true
-      toggle: true
-      caption: "Code"
-    smooth-scroll: true
-    anchor-sections: true
+    code-copy: true       # This is a very helpful, stable feature
