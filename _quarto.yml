@@ -6,7 +6,6 @@ website:
   title: "SDS Assignment"
   description: "Spatial Analysis of BBS Bird Data"
   
-  # Indented correctly inside 'website'
   navbar:
     background: primary
     search: true
@@ -16,7 +15,6 @@ website:
       - icon: github
         href: "https://github.com/matejtvar/SDS-assignment"
 
-  # Indented correctly inside 'website'
   page-footer:
     left: "© 2026 Matěj Tvarůžka"
     right: "Built with Python & Quarto"
@@ -30,7 +28,6 @@ format:
       light: flatly
       dark: darkly
     css: styles.css
-    # This makes the page wider (default is usually ~900px)
     grid:
       body-width: 1100px
       sidebar-width: 200px
@@ -38,9 +35,11 @@ format:
     toc: true
     toc-location: right
     number-sections: true
-    code-fold: true         # Change to 'true' to actually hide code
+    code-fold: true
     code-summary: "View Code"
-    code-copy: true
-    code-tools: true
+    code-tools:
+      source: true
+      toggle: true
+      caption: "Code"
     smooth-scroll: true
     anchor-sections: true
