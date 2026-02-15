@@ -5,14 +5,19 @@ project:
 website:
   title: "SDS Assignment"
   description: "Spatial Analysis of BBS Bird Data"
+  # This links the 'Report an issue' button to your specific repo
+  repo-url: "https://github.com/matejtvar/SDS-assignment/issues/new?assignees=matejtvar"
+  repo-actions: [issue]
+  
   navbar:
     background: primary
-    search: false  # Disabled search to avoid JS errors
+    search: false 
     right:
       - text: "Portfolio"
         href: "https://matejtvar.github.io/"
       - icon: github
         href: "https://github.com/matejtvar/SDS-assignment"
+
   page-footer:
     left: "© 2026 Matěj Tvarůžka"
     right: "Built with Python & Quarto"
@@ -26,10 +31,8 @@ format:
       body-width: 1100px
     toc: true
     toc-location: right
-    # --- NUMBERING SETTINGS ---
     number-sections: true
     number-depth: 3
-    # --------------------------
     code-fold: true
     code-summary: "View Code"
     code-copy: true
